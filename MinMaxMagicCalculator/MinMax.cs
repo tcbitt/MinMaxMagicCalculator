@@ -493,7 +493,7 @@ namespace MinMaxMagicCalculator
         //Ensure only integers can be input into the input boxes
         private void intBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Allow digits, backspace, and a single decimal point
+            // Allow digits, backspace
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true; // Reject the input
